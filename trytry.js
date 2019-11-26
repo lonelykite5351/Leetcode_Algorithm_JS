@@ -81,3 +81,20 @@ for(let obj of complexArray){
         console.log(obj[key])
     }
 }
+//----------------------------------------
+var map = new Map(); //Empty Map
+var map = new Map([[1,2],[2,3],['key', 36]]) // map = {1=>2, 2=>3}
+console.log(map)
+
+//  .get(key) ---> value
+console.log(map.get(1))
+console.log(map.get('key'))
+
+//  .has(key) ---> true/false
+console.log(map.has('key'))
+console.log(map.has(3))
+
+map.set(4,6)
+for(let [key,value] of map){
+    console.log(key,value)
+}
